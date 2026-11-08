@@ -5,7 +5,7 @@
     amazon.aws.iam_managed_policy:
       policy_name: "MyEC2ReadPolicy"
       policy_description: "A policy that allows the user to read information about the AWS Ec2 instances"
-      policy_json: "{{ lookup('file','MyEC2ReadPolicy.json') }}"
+      policy: "{{ lookup('file','MyEC2ReadPolicy.json') }}"
       state: present
     register: policy
 
