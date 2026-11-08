@@ -1,0 +1,6 @@
+---
+- name: Create a policy from a json file and attach it to IAM AWS user
+  hosts: localhost
+  connection: local
+  roles:
+    - policy
